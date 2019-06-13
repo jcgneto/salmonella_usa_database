@@ -4,12 +4,12 @@
 
 # Group members:
 
-Joao Carlos Gomes Neto - UNL (Postdoc - Project manager and data analyst)
-Natasha Pavlovikj - UNL (Computer Scientist)
-Byron Chaves - UNL (Food Safety expert)
-Dustin Loy - UNL (Veterinarian & Diagnostician)
-Peter Iwen - UNMC (MD, Epidemiologist)
-Baha Abdalhamid - UNMC (MD, Clinical Microbiologist)
+Joao Carlos Gomes Neto - UNL (Postdoc - Project manager and data analyst);
+Natasha Pavlovikj - UNL (Computer Scientist);
+Byron Chaves - UNL (Food Safety expert);
+Dustin Loy - UNL (Veterinarian & Diagnostician);
+Peter Iwen - UNMC (MD, Epidemiologist);
+Baha Abdalhamid - UNMC (MD, Clinical Microbiologist);
 Andrew Benson - UNL (leader PI)
 
 ## Objectives  
