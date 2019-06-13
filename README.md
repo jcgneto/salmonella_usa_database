@@ -23,4 +23,19 @@ Andrew Benson - UNL (leader PI)
 
 1. Download all paired-ended Illumina reads to the HCC cluster 
 2. Quality check and trim reads (the scalability of this step will be tested as we move along)
-3. 
+3. Assembly with Spades
+4. Assemblies QC with quast
+5. Annotation with Prokka
+6. Pangenome analysis with Roary
+7. Phylogenetics with ggtree
+8. ST and ribotype calls with customed scripts 
+9. k-mer based GWAS using pyseer, R (libraries to be cited), scoary, and neptune
+10. k-mer mapping to reference genome (may consider mapping to a pangenome)
+
+#### GWAS approach
+
+* The k-mer based approach was chosen, but a gene presence/absence will also be used. 
+* We are interested in two types of genomic events: ancestral to the group of interest (present in all isolates) or those that have recently emerged in the group of interest vs a closely related isolate of another group that is divergent on the phenotype but convergent on phylogenetic position (controlling for ancestral relationships). 
+
+
+
