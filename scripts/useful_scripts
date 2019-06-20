@@ -24,4 +24,9 @@ grep FAIL fastqc_summaries.txt | cut -f 3 | sort | uniq # get the failed jobs so
 
 grep FAIL fastqc_summaries.txt | cut -f 2 | sort | uniq -c # display the counts for each unique type of failure
 
+#####################################################
+
+# Count the number of files in a directory
+
+ls -f . | wc -l
 
