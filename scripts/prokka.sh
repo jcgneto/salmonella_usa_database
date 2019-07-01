@@ -5,9 +5,9 @@
 #SBATCH --ntasks-per-node=12
 #SBATCH --time=72:00:00
 #SBATCH --mem=100GB
-#SBATCH --job-name="sal_typhimurium_carlos"
-#SBATCH --error="sal_typhimurium_carlos_prokka.%J.error"
-#SBATCH --output="sal_typhimurium_carlos_prokka.%J.out"
+#SBATCH --job-name="prokka"
+#SBATCH --error="prokka.%J.error"
+#SBATCH --output="prokka.%J.out"
 
 #module load
 
