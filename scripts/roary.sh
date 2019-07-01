@@ -2,11 +2,11 @@
 #SBATCH --partition=benson
 #SBATCH --time=72:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-node=12
 #SBATCH --mem=100GB
-#SBATCH --job-name="stroary_carlos"
-#SBATCH --error="stroary.%J.error"
-#SBATCH --output="stroary.%J.out"
+#SBATCH --job-name="roary"
+#SBATCH --error="roary.%J.error"
+#SBATCH --output="roary.%J.out"
 
 #module load
 
@@ -18,5 +18,5 @@ DATAOUT=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/
 
 cd $DATAIN
 
-roary -e --mafft -p 8 *.gff -f $DATAOUT
+roary -e --mafft -p 12 *.gff -f $DATAOUT
 
