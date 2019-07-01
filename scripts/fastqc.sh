@@ -42,7 +42,7 @@ done
 
 # Checking summary statistics of fastqc
 
-cat */summary.txt > /work/group/username/dc_workshop/docs/fastqc_summaries.txt #compiling all summary.txt files into one file
+cat */summary.txt > fastqc_summaries.txt #compiling all summary.txt files into one file
 #don't forget to cd into the directory containing the *.txt files
 
 grep FAIL fastqc_summaries.txt # get all files with at least one FAILED job
@@ -50,4 +50,3 @@ grep FAIL fastqc_summaries.txt # get all files with at least one FAILED job
 grep FAIL fastqc_summaries.txt | cut -f 3 | sort | uniq # get the failed jobs sorted by ID and with uniq entries
 
 grep FAIL fastqc_summaries.txt | cut -f 2 | sort | uniq -c # display the counts for each unique type of failure
-
