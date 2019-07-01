@@ -11,13 +11,17 @@
 
 4. Genome assembly using Spades using trimmed paired files (scripts == spades.sh)
 
-5. Genome annotation using contigs.fasta (output from spades) using Prokka (scripts == prokka.sh)
+5. Use quast to aggregate assembly statistics from spades (scripts == quast.sh)
+
+6. Discard genomes that fall into the fallowing criteria : 1) Number of contigs >= 300; or 2) N50 <= 25,000 (scripts == purge_low_quality_genomes.sh)
+ 
+7. Genome annotation using contigs.fasta (output from spades) using Prokka (scripts == prokka.sh)
 ### keep only .gff files for each genome
 
-6. Use roary to get pangenome analysis using .gff files originated with Prokka (scripts == roary.sh) 
+8. Use roary to get pangenome analysis using .gff files originated with Prokka (scripts == roary.sh) 
 ### keep all files generated with roary  
 
-7. Yet to come - scripts for Scoary, phylogeny in python, random forest and logistic PCA, and ST & ribotype calling
+9. Yet to come - scripts for Scoary, phylogeny in python, random forest and logistic PCA, and ST & ribotype calling
 
 Notes:
 
