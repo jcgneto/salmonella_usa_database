@@ -1,0 +1,26 @@
+#Pipeline - Steps
+## all scripts can be found inside the scripts directory
+
+1. Download all targeted Salmonella Typhimurium genomes from SRA using ncbi-pathogen list (scripts == get_sra_reads.sh)
+### Important - we are only using genomes sequenced using Illumina MiSeq with paired-ended sequences
+
+2. Trim raw reads using Trimmomatic (scripts == trim.sh)
+
+3. Quality control trimmed files using FASTQC (scripts == fastqc.sh) - this is not a conditional in the pipeline but just an 
+#assurance that the adpaters were trimmed 
+
+4. Genome assembly using Spades using trimmed paired files (scripts == spades.sh)
+
+5. Genome annotation using contigs.fasta (output from spades) using Prokka (scripts == prokka.sh)
+### keep only .gff files for each genome
+
+6. Use roary to get pangenome analysis using .gff files originated with Prokka (scripts == roary.sh) 
+### keep all files generated with roary  
+
+7. Yet to come - scripts for Scoary, phylogeny in python, random forest and logistic PCA, and ST & ribotype calling
+
+Notes:
+
+*Raw reads will be allocated in our Attic storage directory
+*Scripts will be parallelized and run with pegasus
+*Keep only the describe files and purge all the remainder products of each step
