@@ -8,7 +8,7 @@
 module load entrez-direct
 while read line
 do
-esearch -db sra -query "$line" < /dev/null | efetch -format docsum | xtract -pattern DocumentSummary -element Run@acc >> typhimurium_sra_ids.txt
+research -db sra -query "$line" < /dev/null | efetch -format docsum | xtract -pattern DocumentSummary -element Run@acc >> typhimurium_sra_ids.txt
 done < typhimurium_ids.txt
 # download .sra files in /work/deogun/npavlovikj/ncbi/public/sra
 module load SRAtoolkit/2.9
@@ -17,4 +17,5 @@ do
 prefetch -v $line
 done < typhimurium_sra_ids.txt
 # convert .sra to .fastq files
+
 
