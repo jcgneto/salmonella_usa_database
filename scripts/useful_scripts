@@ -29,4 +29,11 @@ grep FAIL fastqc_summaries.txt | cut -f 2 | sort | uniq -c # display the counts 
 # Count the number of files in a directory
 
 ls -f . | wc -l
+#######################################################
 
+# Remove dashes from directory name and replace with underscores 
+
+for file in *(directories)
+do 
+	mv -- "$file" "${file//-/_}"
+done 
