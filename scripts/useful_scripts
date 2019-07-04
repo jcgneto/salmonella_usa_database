@@ -37,3 +37,14 @@ for file in *(directories)
 do 
 	mv -- "$file" "${file//-/_}"
 done 
+
+###################################################################
+
+# Rename files 
+
+for subdir in *.fasta
+do 
+cp $subdir/contigs.fasta ${subdir//_trimmed*/_contigs.fa}
+done
+**don't forget to change permissions inside of a directory
+
