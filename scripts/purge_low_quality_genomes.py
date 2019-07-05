@@ -14,6 +14,10 @@
 module load python/3.7
 import pandas as pd
 
+# In the cluster just load anaconda
+
+module load anaconda/4.6
+
 # Access the file and open the transposed_report.tsv
 
 filename = 'path_to/transposed_report.tsv'
