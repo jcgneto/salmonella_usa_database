@@ -9,10 +9,6 @@
 #SBATCH --error="filtering_low_quality_genomes.%J.error"
 #SBATCH --output="filtering_low_quality_genomes.%J.out"
 
-# Module load
-
-module load python/3.7
-import pandas as pd
 
 # In the cluster just load anaconda
 
