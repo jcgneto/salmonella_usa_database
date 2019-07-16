@@ -48,3 +48,18 @@ cp $subdir/contigs.fasta ${subdir//_trimmed*/_contigs.fa}
 done
 **don't forget to change permissions inside of a directory
 
+###########################################
+
+# Rename contigs
+
+#!/bin/bash
+
+#Create a new contig files with the folder name
+
+for subdir in *.fasta
+do
+cd ${subdir}
+cp ${subdir}/contigs.fasta ${subdir%%_L001_R1_001.fastq_output.fasta}.fa 
+done
+
+echo "Job is done!"
