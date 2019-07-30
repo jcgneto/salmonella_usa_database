@@ -21,5 +21,5 @@ DATAOUT=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/
 
 cd $DATAIN
 
-quast.py *.fasta -o $DATAOUT
+quast.py *.fasta -r sal_typhimurium_lt2_reference.fasta -g sal_typhimurium_lt2_genes.gff -o $DATAOUT
 
