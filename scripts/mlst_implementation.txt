@@ -1,0 +1,21 @@
+1. Create a conda environment as follows:
+
+module load anaconda
+conda create -n mlst mlst=2.16.2
+
+2. Activate the conda environment as follows:
+
+module load anaconda
+conda activate mlst
+
+3. Copy the st and ribotype directories to the pubmlst directory as follows:
+
+SALMONELLAST=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/mlst/salmonellast 
+SALMONELLARIBOTYPE=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/mlst/salmonellaribotype
+
+cp $SALMONELLAST /home/benson/netogomes/.conda/envs/mlst/bin/../db/pubmlst 
+cp $SALMONELLARIBOTYPE /home/benson/netogomes/.conda/envs/mlst/bin/../db/pubmlst
+
+4. Activate the blast indices before running scripts. Run the scripts below when you are in /home/benson/netogomes/.conda/envs/mlst/bin/../db/pubmlst
+
+bash /home/benson/netogomes/.conda/envs/mlst/scripts/mlst-make_blast_db
