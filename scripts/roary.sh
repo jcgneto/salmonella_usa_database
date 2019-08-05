@@ -18,5 +18,5 @@ DATAOUT=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/
 
 cd $DATAIN
 
-roary -e --mafft -p 12 -cd 100.0 *.gff -f $DATAOUT
+roary -e -p 12 -cd 100.0 *.gff -f $DATAOUT
 
