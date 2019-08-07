@@ -17,6 +17,6 @@ DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/b
 DATAOUT=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/bovine_salmonella_VDL/assemblies/prokka_contigs/correct_files/prokka_done/roary_files/roary_output
 
 cd $DATAIN
-
-roary -e --mafft -p 12 -cd 100.0 *.gff -f $DATAOUT
+#using prank for multi-coregenome alignment
+roary -e -p 12 -cd 100.0 *.gff -f $DATAOUT
 
