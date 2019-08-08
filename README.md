@@ -14,23 +14,29 @@ Andrew Benson - UNL (leader PI)
 
 ## Objectives  
 
-* Population genomics analysis of S.Typhimurium isolated from United States (entire NCBI database)
--- isolates of S. Typhimurium will be filtered from this database (https://www.ncbi.nlm.nih.gov/pathogens/isolates/#/search/taxgroup_name:%22Salmonella%20enterica%22)
+* Population genomics analysis of all serovars of S. Enterica isolated from United States (entire NCBI database)
+-- isolates will be filtered from SRA database)
 
-* Genome-wide association study to identify genomic events separating major ribotypes vs others 
+* Genome-wide association study to identify genomic events separating major BAPS clusters vs others 
 
 ### Computational approach
 
 1. Download all paired-ended Illumina reads to the HCC cluster 
 2. Quality check and trim reads (the scalability of this step will be tested as we move along)
 3. Assembly with Spades
-4. Assemblies QC with quast
+4. Assemblies QC with quast and filter out low quality genomes using customed python scripts
 5. Annotation with Prokka
 6. Pangenome analysis with Roary
-7. Phylogenetics with ggtree
-8. ST and ribotype calls with customed scripts 
-9. k-mer based GWAS using pyseer, R (libraries to be cited), scoary, and neptune
-10. k-mer mapping to reference genome (may consider mapping to a pangenome)
+7. Phylogenetics with fasttree and raxml
+8. ST calls using mlst
+9. plasmifinder to find plasmid
+10. mlst to find resistance, virulence, and plasmid related genes
+11. BAPS analysis of pop structure
+12. snp-sites to filter snps
+13. gubbins to find regions of recombination
+14. k-mer based GWAS using pyseer 
+15. Using pegasus to integrate the pipeline
+
 
 #### GWAS approach
 
