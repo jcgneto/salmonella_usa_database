@@ -30,7 +30,7 @@ Andrew Benson - UNL (leader PI)
 7. Phylogenetics with fasttree and raxml
 8. ST calls using mlst
 9. plasmifinder to find plasmid
-10. mlst to find resistance, virulence, and plasmid related genes
+10. abricate to find resistance, virulence, and plasmid related genes
 11. BAPS analysis of pop structure
 12. snp-sites to filter snps
 13. gubbins to find regions of recombination
