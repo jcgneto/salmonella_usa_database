@@ -4,17 +4,17 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=12
 #SBATCH --mem=100GB
-#SBATCH --job-name="fasttree"
-#SBATCH --error="fasttree.%J.error"
-#SBATCH --output="fasttree.%J.out"
+#SBATCH --job-name="fasttreeslow"
+#SBATCH --error="fasttreeslow.%J.error"
+#SBATCH --output="fasttreeslow.%J.out"
 
 #module load
 
 module load fasttree/2.1
 
-DATAIN=
-DATAOUT=
+DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/prokka_human_bovine/prokka_output/roary/fasttreeslow
 
 cd $DATAIN
 
-FastTree -nt -pseudo -fastest < core_gene_alignment.aln > core_gene_alignment.tree
+FastTree -nt -gtr < core_gene_alignment.aln > sentericaslowphylogeny.tree
+
