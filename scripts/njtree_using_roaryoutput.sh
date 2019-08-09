@@ -4,9 +4,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=12
 #SBATCH --mem=100GB
-#SBATCH --job-name="njtree"
-#SBATCH --error="njtree.%J.error"
-#SBATCH --output="njtree.%J.out"
+#SBATCH --job-name="njtreeroary"
+#SBATCH --error="njtreeroary.%J.error"
+#SBATCH --output="njtreeroary.%J.out"
 
 #module load
 
