@@ -37,11 +37,11 @@ tree = constructor.nj(dm)
 # Draw the phylogenetic tree
 Phylo.draw(tree)
 
-testplot1 = Phylo.draw_ascii(tree)
-plt.savefig('testplot1.png')
-Image.open('testplot1.png').save('testplot1.jpg','JPEG')
+testplot1roary = Phylo.draw_ascii(tree)
+plt.savefig('testplot1roary.png')
+Image.open('testplot1roary.png').save('testplot1roary.jpg','JPEG')
 
-testplot2 = tree.ascii_art()
-plt.savefig('testplot2.png')
-Image.open('testplot2.png').save('testplot2.jpg','JPEG')
+testplot2roary = tree.ascii_art()
+plt.savefig('testplot2roary.png')
+Image.open('testplot2roary.png').save('testplot2roary.jpg','JPEG')
 
