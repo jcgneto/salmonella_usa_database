@@ -4,9 +4,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=12
 #SBATCH --mem=100GB
-#SBATCH --job-name="njtreeroary"
-#SBATCH --error="njtreeroary.%J.error"
-#SBATCH --output="njtreeroary.%J.out"
+#SBATCH --job-name="njtreegubbins"
+#SBATCH --error="njtreegubbins.%J.error"
+#SBATCH --output="njtreegubbins.%J.out"
 
 #module load
 
@@ -38,10 +38,10 @@ tree = constructor.nj(dm)
 # Draw the phylogenetic tree
 Phylo.draw(tree)
 
-testplot1 = Phylo.draw_ascii(tree)
-plt.savefig('testplot1.png')
-Image.open('testplot1.png').save('testplot1.jpg','JPEG')
+testplot1gubbins = Phylo.draw_ascii(tree)
+plt.savefig('testplot1gubbins.png')
+Image.open('testplot1gubbins.png').save('testplot1gubbins.jpg','JPEG')
 
-testplot2 = tree.ascii_art()
-plt.savefig('testplot2.png')
-Image.open('testplot2.png').save('testplot2.jpg','JPEG')
+testplot2gubbins = tree.ascii_art()
+plt.savefig('testplot2gubbins.png')
+Image.open('testplot2gubbins.png').save('testplot2gubbins.jpg','JPEG')
