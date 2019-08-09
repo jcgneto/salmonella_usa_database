@@ -29,6 +29,6 @@ aln = $DATAIN/core_gene_alignment.aln
 # Calculate the distance matrix
 calculator = DistanceCalculator('identity')
 dm = calculator.get_distance(aln)
-np.savetxt('text.txt',dm,fmt='%.2f')
+np.savetxt('distmatrixroary.txt',dm,fmt='%.2f')
 
 
