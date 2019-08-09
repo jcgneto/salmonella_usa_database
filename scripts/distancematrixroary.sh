@@ -13,7 +13,7 @@
 module load anaconda/4.6
 module load biopython/py36/1.71
 
-DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/prokka_human_bovine/prokka_output/roary/gubbins
+DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/prokka_human_bovine/prokka_output/roary/gubbins/distmatrixroary
 
 cd $DATAIN
 
