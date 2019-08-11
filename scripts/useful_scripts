@@ -85,3 +85,18 @@ DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/p
 cd $DATAIN
 
 FastTree -nt -gtr < core_gene_alignment.aln > sentericaslowphylogeny.tree
+
+
+###########################################################################
+
+
+I updated snp-sites to 2.4 on the clusters, and you can load the module with "module load snp-sites/2.4".
+
+I created conda package for "rhierbaps".
+The module will probably be available tomorrow, but if you want to test it tonight, you can create your own conda env, e.g.:
+[npavlovikj@login.crane ~]$ module load anaconda
+[npavlovikj@login.crane ~]$ conda create -n r-rhierbaps r-rhierbaps
+[npavlovikj@login.crane ~]$ conda activate r-rhierbaps
+(r-rhierbaps) [npavlovikj@login.crane ~]$ R
+> library("rhierbaps")
+
