@@ -12,7 +12,7 @@
 
 module load snp-sites/2.4
 
-DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/prokka_human_bovine/prokka_output/roary/gubbins/snp_sites
+DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/paper_1_analysis/prokka_human_bovine/prokka_output/roary/snp_sites
 
 cd $DATAIN
 
