@@ -19,7 +19,7 @@ DATAIN=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/p
 
 cd $DATAIN
 
-Rscript --vanilla baps.R
+Rscript baps.R
 
 
 # the baps.R is a separate script although I am putting them together here
