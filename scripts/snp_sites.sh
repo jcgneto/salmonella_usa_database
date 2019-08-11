@@ -18,4 +18,4 @@ cd $DATAIN
 
 # Run snp-sites
 
-snp-sites core_gene_alignment.aln
+snp-sites core_gene_alignment.aln > snp_sites_core_aln.fasta
