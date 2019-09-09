@@ -100,3 +100,6 @@ The module will probably be available tomorrow, but if you want to test it tonig
 (r-rhierbaps) [npavlovikj@login.crane ~]$ R
 > library("rhierbaps")
 
+##########################################################
+one liner to change file names
+for i in *.gff; do mv -- "$i" "${i%_contigs.gff}.gff";done
