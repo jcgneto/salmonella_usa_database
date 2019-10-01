@@ -18,5 +18,5 @@ DATAOUT=/work/benson/netogomes/pop_genomics/salmonella_project_1/data_raw_files/
 
 cd $DATAIN
 #using prank for multi-coregenome alignment
-roary -e --mafft -p 12 -cd 100.0 *.gff -f $DATAOUT
-
+# with cd=100 the Newport dataset didn't produce any alignments, so for consistency with all datasets, "cd=99 i=95" is now used
+roary -e --mafft -p 12 -cd 99.0 -i 95 *.gff -f $DATAOUT
