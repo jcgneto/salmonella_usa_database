@@ -17,3 +17,6 @@
 2. BAPS, 1 node, 1 core, 1257 sequences
 * Memory used: ~130GB
 * Running time: ~4 hours
+3. BAPS, 1 node, 8 cores, 1257 sequences
+* Memory used: ~230GB
+* Running time: ~1.5 hours
