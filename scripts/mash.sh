@@ -4,7 +4,6 @@
 #SBATCH --ntasks-per-node=8
 #SBATCH --time=168:00:00
 #SBATCH --mem=50gb
-#SBATCH --partition=batch,tmp_anvil,benson
 
 export OMP_NUM_THREADS=8
 
