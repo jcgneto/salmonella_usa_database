@@ -1,0 +1,23 @@
+
+
+    Newport USA:
+        kmer matrix, /common/deogun/npavlovikj/public/split_k_mers/newport_matrix_kmer_1_0.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/aKronyMer_results/newport_core_genome_alignment.aln_output
+    Newport NE:
+        kmer matrix, /common/deogun/npavlovikj/public/split_k_mers/split_ne/newport_ne_matrix_kmer.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/split_k_mers/split_ne/newport_ne_kmer_distance.csv
+    Infantis:
+        kmer matrix, /common/deogun/npavlovikj/public/pegasus-salmonella-infantis-hcc/split_k_mer/infantis_matrix_kmer.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/aKronyMer_results/infantis_core_genome_alignment.aln_output
+    FSIS:
+        kmer matrix, /common/deogun/npavlovikj/public/se_fsis/fsis_split_k_mer/fsis_matrix_kmer.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/aKronyMer_results/fsis_core_genome_alignment_output
+    Enteritidis (all 20+ subsets):
+        kmer matrix, /common/deogun/npavlovikj/public/enteritidis_split_k_mer_output/gr*_enteritidis_matrix_kmer.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/aKronyMer_results/enteritidis_gr*_core_genome_alignment.aln_output
+    Typhimurium (all 20+ subsets):
+        kmer matrix, /common/deogun/npavlovikj/public/typhimurium_split_k_mer_output/gr*_typhimurium_matrix_kmer.csv
+        kmer distance matrix, /common/deogun/npavlovikj/public/aKronyMer_results/typhimurium_gr*_core_genome_alignment.aln_output
+
+
+The kmer distance matrix is generated using aKronyMer (github.com/jcgneto/salmonella_usa_database/blob/master/scripts/akronymer.sh), while the kmer matrix is generated using KMC (to extract the kmers) and our custom code to generate the matrix (github.com/jcgneto/salmonella_usa_database/blob/master/scripts/kmc.sh) with the filtered contigs.
