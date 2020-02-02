@@ -17,6 +17,6 @@ host=`esearch -db sra -query ${sra_id} | elink -target biosample | efetch -forma
 sleep 1
 geo_loc=`esearch -db sra -query ${sra_id} | elink -target biosample | efetch -format docsum | xtract -pattern DocumentSummary -block Attribute -if Attribute@attribute_name -equals "geo_loc_name" -element Attribute`
 title=`esearch -db sra -query ${sra_id} | elink -target biosample | efetch -format docsum | xtract -pattern DocumentSummary -if Title -first Title`
-date=`esearch -db sra -query SRR1002805 | elink -target biosample | efetch -format docsum | xtract -pattern DocumentSummary -element Date`
+date=`esearch -db sra -query ${sra_id} | elink -target biosample | efetch -format docsum | xtract -pattern DocumentSummary -block Attribute -if Attribute@display_name -equals "collection date" -element Attribute`
 echo -e "$sra_id|$title|$geo_loc|$host|$host_disease|$isolation_source|$date" >> metadata_output.txt
 done
