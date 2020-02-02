@@ -10,5 +10,4 @@ export OMP_NUM_THREADS=8
 module load mash/2.2
 
 # we use kmer length 30 for KMC
-mash sketch -p 8 -k 30 core_gene_alignment.aln
-mash dist -p 8 core_gene_alignment.aln.msh core_gene_alignment.aln.msh
+mash triangle -k 30 -r newport_core_gene_alignment.aln >> newport_core_gene_alignment_distance_matrix.txt

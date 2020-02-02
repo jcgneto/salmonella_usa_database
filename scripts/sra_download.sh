@@ -10,3 +10,4 @@ export OMP_NUM_THREADS=8
 module load parallel-fastq-dump/0.6
 
 prefetch SRR9855353 && parallel-fastq-dump --sra-id SRR9855353 --threads 8 --split-files
+rm -rf SRR9855353/
